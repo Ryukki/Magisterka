@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Quotes page</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <style>
+            .top-buffer { margin-top: 3rem; }
+            .top-margin-20 {margin-top: 8%;}
+        </style>
+    </head>
+    <body>
+        <div class="container top-margin-20">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-lg btn-primary" id="getRandomQuoteButton" onclick="getRandomQuote()"><h1>Random quote</h1></button>
+                    </div>
+                </div>
+                <div class="row top-buffer">
+                    <div class="col">
+                        <div id="quoteTextDiv"></div>
+                    </div>
+                </div>
+                <div class="row top-buffer">
+                    <div class="col text-right">
+                        <div id="quoteAuthorDiv"><p class="text-right" id="quoteAuthorP"></p></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
+    <script src="./script/apiCommunication.js"></script>
+</html>
+
+
