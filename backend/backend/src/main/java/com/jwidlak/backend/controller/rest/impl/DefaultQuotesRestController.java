@@ -34,4 +34,9 @@ public class DefaultQuotesRestController implements QuotesRestController {
         return HttpStatus.OK;
     }
 
+    @Override
+    public HttpStatus checkStatus() {
+        return HttpStatus.OK;
+    }
+
 }

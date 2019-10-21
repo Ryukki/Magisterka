@@ -19,4 +19,7 @@ public interface QuotesRestController {
 
     @PostMapping("/addQuote")
     public HttpStatus addNewQuote(@RequestBody Quote quote);
+
+    @GetMapping("/status")
+    public HttpStatus checkStatus();
 }
